@@ -12,7 +12,6 @@
 node_tmp/
 node_modules/
 npm-debug.log.*
-config.yml
 
 ######################
 # SASS
