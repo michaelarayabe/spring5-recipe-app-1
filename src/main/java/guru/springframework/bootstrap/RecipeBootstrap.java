@@ -94,7 +94,7 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
 
         Recipe guacRecipe = new Recipe();
         guacRecipe.setDescription("Perfect Guacamole");
-        guacRecipe.setPreTime(10);
+        guacRecipe.setPrepTime(10);
         guacRecipe.setCookTime(0);
         guacRecipe.setDifficulty(Difficulty.EASY);
         guacRecipe.setDirections("1 Cut the avocado, remove flesh: Cut the avocados in half. Remove the pit. Score the inside of the avocado with a blunt knife and scoop out the flesh with a spoon." +
@@ -132,7 +132,7 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         Recipe tacosRecipe = new Recipe();
         tacosRecipe.setDescription("Spicy Grilled Chicken Taco");
         tacosRecipe.setCookTime(9);
-        tacosRecipe.setPreTime(20);
+        tacosRecipe.setPrepTime(20);
         tacosRecipe.setDifficulty(Difficulty.MODERATE);
 
         tacosRecipe.setDirections("1 Prepare a gas or charcoal grill for medium-high, direct heat.\n" +

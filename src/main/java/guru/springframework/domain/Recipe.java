@@ -6,6 +6,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+
 @Data
 @Entity
 public class Recipe {
@@ -15,7 +16,7 @@ public class Recipe {
     private Long id;
 
     private String description;
-    private Integer preTime;
+    private Integer prepTime;
     private Integer cookTime;
     private Integer servings;
     private String source;
@@ -41,8 +42,10 @@ public class Recipe {
     private Set<Category> categories = new HashSet<>();
 
     public void setNotes(Notes notes) {
-        this.notes = notes;
-        notes.setRecipe(this);
+        if(notes != null) {
+            this.notes = notes;
+            notes.setRecipe(this);
+        }
     }
 
     public Recipe addIngredient(Ingredient ingredient){
